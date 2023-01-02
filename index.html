@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Fetch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <!-- Search bar -->
+    <div class="navbar bg-light ">
+        <form id="form" class="d-flex" role="search">
+            <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="searchbtn" class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+    <div>
+        <p id="warning"></p>
+    </div>
+    <!-- Search result -->
+    <div>
+        <h1 id="weather">Weather in <span id="city">City</span></h1>
+    </div>
+
+    <!-- Weather Card -->
+    <div id="mainCard" class="card">
+
+        <div class="card-body">
+            <img id="icon" src="https://www.weatherbit.io/static/img/icons/c04n.png" class="card-img-top" alt="...">
+            <div id="flex">
+                <h2 class="card-title"><span id="temp"></span> <span>&#8451;</span></h2>
+                <p>Feels Like: <span id="feelsLike"></span> <span> &#8451;</span></p>
+                <p id="desc">desc</p>
+            </div>
+        </div>
+        <div class="list-group list-group-flush hell">
+            <div>
+                <div>Wind</div>
+                <div><span id="wind"></span>&nbsp; m/s</div>
+            </div>
+            <div>
+                <div>UV Index</div>
+                <div><span id="UV"></span></div>
+            </div>
+            <div>
+                <div>Air Quality Index</div>
+                <div><span id="AQI"></span></div>
+            </div>
+            <div>
+                <div>Dew Point</div>
+                <div><span id="dew"></span>&#8451;</div>
+            </div>
+            <div>
+                <div>Humidity</div>
+                <div><span id="hum"></span>%</div>
+            </div>
+            <div>
+                <div>Cloud Coverage</div>
+                <div><span id="cloudCover"></span>%</div>
+            </div>
+            <div>
+                <div>Visibility</div>
+                <div><span id="visibility"></span>km</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Search Data -->
+    <!-- <div id="weathercard" class="container-fluid">
+        <div id="head">
+            <h1 id="h1">Current Weather</h1>
+            <p id="dnt"></p>
+        </div>
+
+        <div id="logoNtemp">
+            <div id="tempNdesc"></div>
+        </div>
+        <div>
+            <ul id="otherInfo">
+                <li>AQI</li>
+                <li>Wind Direction</li>
+                <li>Snow</li>
+            </ul>
+        </div>
+
+    </div> -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
+<!-- <img id="icon" src="https://www.weatherbit.io/static/img/icons/c04n.png" class="card-img-top" alt="..."> -->
